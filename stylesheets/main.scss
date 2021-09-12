@@ -58,11 +58,6 @@ a.bold, p.bold{
   display: none;
 }
 .cookie-notice{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -101,6 +96,10 @@ a.bold, p.bold{
   right: 0;
   z-index: 5;
   transition: 0.1s ease;
+  &.open{
+    overflow-y: scroll;
+    height: 100%;
+  }
   & hr{
     border: 1px solid $Cherry;
     margin: 16px 0 16px 0;

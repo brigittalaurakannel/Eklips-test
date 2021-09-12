@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ICON - FB Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SHARE---PRINT" transform="translate(-112.000000, -20.000000)" fill="#FFFFFF">
+            <g id="Group-17">
+                <g id="ICON---Print" transform="translate(112.000000, 20.000000)">
+                    <g id="Shape">
+                        <path d="M18,0 C8.064,0 0,8.064 0,18 C0,27.936 8.064,36 18,36 C27.936,36 36,27.936 36,18 C36,8.064 27.936,0 18,0 Z M18,33.84 C9.216,33.84 2.16,26.784 2.16,18 C2.16,9.216 9.216,2.16 18,2.16 C26.784,2.16 33.84,9.216 33.84,18 C33.84,26.784 26.784,33.84 18,33.84 Z" fill-rule="nonzero"></path>
+                        <path d="M24.192,14.472 L11.808,14.472 C10.296,14.472 9.144,15.624 9.144,17.136 L9.144,22.392 L12.672,22.392 L12.672,25.92 L23.256,25.92 L23.256,22.392 L26.784,22.392 L26.784,17.136 C26.784,15.624 25.632,14.472 24.192,14.472 L24.192,14.472 Z M21.528,24.192 L14.472,24.192 L14.472,19.8 L21.528,19.8 L21.528,24.192 L21.528,24.192 Z M23.256,10.08 L12.744,10.08 L12.744,13.608 L23.328,13.608 L23.328,10.08 L23.256,10.08 Z" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

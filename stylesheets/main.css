@@ -47,11 +47,6 @@ a.bold, p.bold {
   display: none; }
 
 .cookie-notice {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -83,6 +78,9 @@ a.bold, p.bold {
   right: 0;
   z-index: 5;
   transition: 0.1s ease; }
+  .header.open {
+    overflow-y: scroll;
+    height: 100%; }
   .header hr {
     border: 1px solid #D41217;
     margin: 16px 0 16px 0; }

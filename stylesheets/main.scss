@@ -1032,3 +1032,11 @@ footer{
     }
   }
 }
+/* MS Edge */
+@supports (-ms-ime-align:auto) {
+ .header-bottom{
+   & .menu-item{
+     letter-spacing: -1px;
+   }
+ }
+}

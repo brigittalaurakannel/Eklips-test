@@ -7,15 +7,21 @@ $XCaliber: #7B858A;
 $GreyDark: #4a4a4a;
 $GreyLight: #E7E8E8;
 
+/* fallback fonts */
+@font-face {
+      font-family: 'secondaryFont';
+      src: local('Helvetica');
+      letter-spacing: -1px;
+}
 p, a, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
   margin-bottom: 0;
-  font-family: TrebuchetMS, Helvetica, "Liberation Sans";
+  font-family: TrebuchetMS, secondaryFont, "Liberation Sans";
 }
 *{
   box-sizing: border-box;
 }
 body{
-  font-family: TrebuchetMS, Helvetica, "Liberation Sans";
+  font-family: TrebuchetMS, secondaryFont, "Liberation Sans";
 }
 p{
   font-size: 16px;
@@ -337,7 +343,7 @@ a.bold, p.bold{
     transform: translateX(-50%);
     bottom: calc(50% - 50px);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: TrebuchetMS;
+    font-family: TrebuchetMS, secondaryFont, "Liberation Sans";
     font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
@@ -471,7 +477,7 @@ section{
     color: #fff;
   }
   & h5{
-    font-family: TrebuchetMS;
+    font-family: TrebuchetMS, secondaryFont, "Liberation Sans";
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -725,7 +731,7 @@ footer{
         background-color: rgba(255, 255, 255, 0.9);
         top: 10px!important;
         & a{
-          font-family: TrebuchetMS;
+          font-family: TrebuchetMS, secondaryFont, "Liberation Sans";
           font-size: 16px;
           font-weight: normal;
           font-stretch: normal;
@@ -911,7 +917,7 @@ footer{
         padding: 6px 16px;
         min-width: 490px;
         & label{
-          font-family: TrebuchetMS;
+          font-family: TrebuchetMS, secondaryFont, "Liberation Sans";
           font-size: 16px;
           font-weight: normal;
           font-stretch: normal;
@@ -1031,12 +1037,4 @@ footer{
       max-width: 185px;
     }
   }
-}
-/* MS Edge */
-@supports (-ms-ime-align:auto) {
- .header-bottom{
-   & .menu-item{
-     letter-spacing: -1px;
-   }
- }
 }

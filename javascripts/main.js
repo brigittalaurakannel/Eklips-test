@@ -1,11 +1,5 @@
 $(function(){
 
-  /* browser detect for edge */
-
-  if (document.documentMode || /Edge/.test(navigator.userAgent)) {
-    $('body').css('letter-spacing', '-1px')
-}
-
   /* cookie notice */
     $('.cookie-notice').addClass('open');
     $('.hero').css('margin-top', +$('.cookie-notice').outerHeight())

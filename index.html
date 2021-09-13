@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
   <link rel="stylesheet" href="stylesheets/main.css">
 
 </head>
@@ -59,21 +60,22 @@
         <div class="header-search">
           <div class="search-bar">
             <img src="assets/search-icon.svg" alt="">
+            <img src="assets/search-white.svg" alt="" class="white">
             <input type="text" class="textbar" id="site-search" name="q"
              placeholder="Lorem Ipsum Dolor">
           </div>
         </div>
           <div class="menu-items">
-            <li class="menu-item"><a>about cherry</a><img src="assets/plus.svg" alt=""></li>
-            <li class="menu-item"><a>business areas</a><img src="assets/plus.svg" alt=""></li>
+            <li class="menu-item"><a>about cherry</a><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></li>
+            <li class="menu-item"><a>business areas</a><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></li>
             <div class="dropdown">
-              <a class="dropbtn"><p>corporate govenance</p><img src="assets/plus.svg" alt=""></a>
+              <a class="dropbtn"><p>corporate govenance</p><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></a>
               <div class="dropdown-content">
                 <a href="" class="column-item">General Meeting</a>
                   <a href="" class="column-item">Annual General Meeting 2017</a>
                   <a href="" class="column-item">Nomination committee</a>
                 <div class="dropdown">
-                  <a class="dropbtn inner-dropbtn"><p>Boards of Directors</p><img src="assets/plus.svg" alt=""></a>
+                  <a class="dropbtn inner-dropbtn"><p>Boards of Directors</p><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></a>
                   <div class="dropdown-content">
                     <a href="" class="column-item smaller">Work of the board</a>
                     <a href="" class="column-item smaller">Committees</a>
@@ -89,10 +91,10 @@
                 <a href="" class="column-item">Articles of Association</a>
               </div>
             </div>
-            <li class="menu-item"><a>investors</a><img src="assets/plus.svg" alt=""></li>
-            <li class="menu-item"><a>media</a><img src="assets/plus.svg" alt=""></li>
-            <li class="menu-item"><a>career</a><img src="assets/plus.svg" alt=""></li>
-            <li class="menu-item"><a>contact</a><img src="assets/plus.svg" alt=""></li>
+            <li class="menu-item"><a>investors</a><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></li>
+            <li class="menu-item"><a>media</a><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></li>
+            <li class="menu-item"><a>career</a><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></li>
+            <li class="menu-item"><a>contact</a><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></li>
           </div>
       </div>
       <hr>
@@ -136,22 +138,24 @@
             <a class="menu-item" href="">career</a>
             <a class="menu-item" href="">contact</a>
           </div>
-          <h4 class="red">CHER B: 59.50sek +1.</h4>
-            <div class="dropdown lang-switch">
-            <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <p>ENG</p><img src="assets/arrow-down-white.svg" alt="">
-            </a>
+          <div class="items-right">
+            <h4 class="red">CHER B: 59.50sek +1.</h4>
+              <div class="dropdown lang-switch">
+              <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <p>ENG</p><img src="assets/arrow-down-white.svg" alt="">
+              </a>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">ENG</a>
+                <a class="dropdown-item" href="#">SWE</a>
+              </div>
             </div>
-          </div>
-          <div class="search">
-            <a class="search-icon">
-              <img src="assets/search-icon.svg" alt="">
-            </a>
+            <div class="search">
+              <a class="search-icon">
+                <img src="assets/search-icon.svg" alt="">
+                <img src="assets/search-white.svg" alt="" class="white">
+              </a>
+            </div>
           </div>
         <div class="burger mobile">
           <a href="" class="burger-icon"></a>
@@ -170,8 +174,9 @@
   </header>
   <div class="hero">
     <div class="hero-items">
-    <div>
+    <div style="position: relative">
       <img src="images/hero.png" alt="">
+      <h2 class="text-overlay">Lorem ipsum dolor sit amet</h2>
     </div>
     <div>
       <a class="video-btn" data-fancybox href="https://www.youtube.com/embed/EngW7tLk6R8">
@@ -183,7 +188,7 @@
     </div>
       <div>
           <div class="video-wrapper">
-              <iframe class="embed-player" src="https://www.youtube.com/embed/EngW7tLk6R8?controls=0&autplay=1&loop=1" autoplay; modestbranding;></iframe>
+              <iframe class="embed-player" src="https://www.youtube.com/embed/EngW7tLk6R8?controls=0&mute=1&autoplay=1&loop=1&playlist=EngW7tLk6R8" allow="autoplay" autoplay; muted; modestbranding;></iframe>
           </div>
       </div>
   </div>
@@ -292,9 +297,9 @@
       </div>
     </section>
     <section class="content-half">
-      <div class="row">
+      <div class="row background-ComeOn">
         <div class="half-col">
-          <div class="text background-ComeOn">
+          <div class="text">
             <h2>Online Gaming</h2>
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Donec eget massa a diam condimentum pretium. </p>
           </div>
@@ -303,9 +308,9 @@
           <img src="images/onlinegaming.png" alt="">
         </div>
       </div>
-      <div class="row">
+      <div class="row background-RestaurangCasino">
         <div class="half-col">
-          <div class="text background-RestaurangCasino">
+          <div class="text">
             <h2>Online Gaming</h2>
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Donec eget massa a diam condimentum pretium. </p>
           </div>
@@ -314,9 +319,9 @@
           <img src="images/restaurantcasino.png" alt="">
         </div>
       </div>
-      <div class="row">
+      <div class="row background-Yggdrasil">
         <div class="half-col">
-          <div class="text background-Yggdrasil">
+          <div class="text">
             <h2>Online Gaming</h2>
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Donec eget massa a diam condimentum pretium. </p>
           </div>
@@ -325,9 +330,9 @@
           <img src="images/gamedev.png" alt="">
         </div>
       </div>
-      <div class="row">
+      <div class="row background-GameLounge">
         <div class="half-col">
-          <div class="text background-GameLounge">
+          <div class="text">
             <h2>Online Gaming</h2>
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Donec eget massa a diam condimentum pretium. </p>
           </div>
@@ -336,9 +341,9 @@
           <img src="images/marketing.png" alt="">
         </div>
       </div>
-      <div class="row">
+      <div class="row background-GreyDark">
         <div class="half-col">
-          <div class="text background-GreyDark">
+          <div class="text">
             <h2>Online Gaming</h2>
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Donec eget massa a diam condimentum pretium. </p>
           </div>
@@ -347,9 +352,9 @@
           <img src="images/gamingtech.png" alt="">
         </div>
       </div>
-      <div class="row">
+      <div class="row background-Cherry">
         <div class="half-col">
-          <div class="text background-Cherry">
+          <div class="text">
             <h2>Online Gaming</h2>
             <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Donec eget massa a diam condimentum pretium. </p>
           </div>
@@ -453,6 +458,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="javascripts/main.js"></script>
 </body>
 </html>

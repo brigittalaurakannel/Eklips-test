@@ -8,10 +8,14 @@ $GreyDark: #4a4a4a;
 $GreyLight: #E7E8E8;
 
 /* fallback font */
+
+@font-face {
+  font-family: TrebuchetMS;
+  src: url(/font/trebuc.woff);
+}
 @font-face {
       font-family: 'secondaryFont';
       src: local('Helvetica');
-      font-size: 15px;
 }
 p, a, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
   margin-bottom: 0;

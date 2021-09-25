@@ -312,10 +312,17 @@ a.bold, p.bold{
 
 .header-upper{
   padding: 14px 30px;
-  .container{
+  & .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  & .header-upper-right{
+    display: flex;
+    align-items: center;
+    & .lang-switch{
+      margin-right: 16px;
+    }
   }
 }
  .header-bottom{
@@ -570,6 +577,7 @@ $colors: (
     &.img-col{
       display: flex;
       justify-content: center;
+      width: 100%;
       & img{
         width: 100%;
       }
@@ -641,7 +649,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 80px 62px 80px;
+  padding: 35px;
   background-color: rgba(212, 18, 23, 0.05);
   text-align: center;
   & .row{
@@ -660,7 +668,7 @@ footer{
   & .column{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 24px;
     word-wrap: break-word;
   }
   & .menu-item{
@@ -668,7 +676,7 @@ footer{
     text-transform: uppercase;
     font-weight: bold;
     color: $Cherry;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
   }
   & .menu-item-s{
     font-size: 16px;
@@ -682,24 +690,20 @@ footer{
     }
   }
   & .text-center{
-    font-size: 14px!important;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2.14;
     letter-spacing: normal;
     text-align: center;
+    & p{
+      font-size: 14px;
+    }
     & a{
       color: $Cherry;
     }
     & .links{
 
     }
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1439px){
-  .content-half .half-col.img-col img{
-    width: auto;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -997,6 +1001,9 @@ footer{
       & img{
         width: 100%;
       }
+      &.img-col{
+        width: 50%;
+      }
     }
     & .row{
       flex-direction: row;
@@ -1033,11 +1040,19 @@ footer{
   }
   footer{
     text-align: left;
+    padding: 40px 80px 62px 80px;
+    & .menu-item{
+      margin-bottom: 32px;
+    }
+    & .text-center{
+      line-height: 2.14;
+    }
     & .row{
       flex-direction: row;
       justify-content: space-between;
     }
     & .column{
+      margin-top: 30px;
       max-width: 185px;
     }
   }

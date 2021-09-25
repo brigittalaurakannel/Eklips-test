@@ -20,12 +20,14 @@ $(function(){
     $('.mob-menu').addClass('open');
     $('.burger').hide();
     $('.close-img').show();
+    $('.header .lang-switch').css('display', 'block');
   })
   $('.close-img').on('click', function(){
     $('.header').removeClass('open')
     $('.mob-menu').removeClass('open');
     $('.close-img').hide();
     $('.burger').show();
+    $('.header .lang-switch').css('display', 'none');
   })
   $('.header.open a').on('click', function(){
     $('.header').removeClass('open')

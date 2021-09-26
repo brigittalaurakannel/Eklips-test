@@ -311,7 +311,7 @@ a.bold, p.bold{
 }
 
 .header-upper{
-  padding: 14px 30px;
+  padding: 14px 15px;
   & .container{
     display: flex;
     justify-content: space-between;
@@ -757,6 +757,8 @@ footer{
   }
   .header-upper{
     padding-top: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .header-bottom{
     position: relative;
